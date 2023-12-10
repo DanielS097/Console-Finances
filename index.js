@@ -229,7 +229,7 @@ for (let i = 1; i < finances.length; i++) {
 //! let totalMonths = finances.length;
 //! let totalProfits = 0;
 //! let greatestIncrease = ;
-// let greatestDecrease = ;
+//! let greatestDecrease = ;
 // let averageChange = 0;
 
 let totalProfits = 0;
@@ -246,6 +246,16 @@ for (let i = 1; i < finances.length; i++) {
   }
 }
 console.log("Greatest Increase in Profits/Losses: $" + greatestIncrease);
+
+
+let greatestDecrease = 0;
+for (let i = 1; i < finances.length; i++) {
+  let decrease = finances[i][1] - finances[i - 1][1];
+  if (decrease < greatestDecrease) {
+    greatestDecrease = decrease;
+  }
+}
+console.log("Greatest Decrease in Profits/Losses: $" + greatestDecrease);
 
 
 
