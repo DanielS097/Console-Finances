@@ -224,7 +224,17 @@ for (let i = 1; i < finances.length; i++) {
     console.log("Total months: " + finances.length)
 };
 
+//! let totalMonths = finances.length;
+//! let totalProfits = 0;
+// let greatestIncrease = ;
+// let greatestDecrease = ;
+// let averageChange = 0;
 
+let totalProfits = 0;
+for (let i = 0; i < finances.length; i++) {
+  (totalProfits += finances[i][1])
+};
+console.log("Total: $" + totalProfits);
 
 
 
