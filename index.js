@@ -224,9 +224,11 @@ for (let i = 1; i < finances.length; i++) {
     console.log("Total months: " + finances.length)
 };
 
+//Set out variables
+
 //! let totalMonths = finances.length;
 //! let totalProfits = 0;
-// let greatestIncrease = ;
+//! let greatestIncrease = ;
 // let greatestDecrease = ;
 // let averageChange = 0;
 
@@ -235,6 +237,15 @@ for (let i = 0; i < finances.length; i++) {
   (totalProfits += finances[i][1])
 };
 console.log("Total: $" + totalProfits);
+
+let greatestIncrease = 0;
+for (let i = 1; i < finances.length; i++) {
+  let increase = finances[i][1] - finances[i - 1][1];
+  if (increase > greatestIncrease) {
+    greatestIncrease = increase;
+  }
+}
+console.log("Greatest Increase in Profits/Losses: $" + greatestIncrease);
 
 
 
