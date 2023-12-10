@@ -7,3 +7,6 @@
 
 # Link for the deployed app
 ## https://daniels097.github.io/Console-Finances/
+
+
+## Starting from line 236 until line 250 in the index.js I have had help from my Tutoring session. The rest of the code it is done by own research and a lot of testing.
